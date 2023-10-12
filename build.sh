@@ -9,6 +9,8 @@ SOURCE="https://github.com/leppa/lama-cleaner-docker"
 IMAGE_NAME="leppa/lama-cleaner"
 REGISTRY="ghcr.io"
 
+export DOCKER_BUILDKIT=1
+
 # Normal (GPU & CPU)
 docker buildx build \
 --file ./Dockerfile \
